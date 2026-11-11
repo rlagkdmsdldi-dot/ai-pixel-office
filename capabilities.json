@@ -1,0 +1,90 @@
+{
+  "db": {
+    "rules": [
+      {
+        "path": "",
+        "read": "view",
+        "write": "owner"
+      },
+      {
+        "path": "frecords",
+        "read": "admin",
+        "write": "owner"
+      },
+      {
+        "path": "ftasks",
+        "read": "admin",
+        "write": "owner"
+      },
+      {
+        "path": "fevents",
+        "read": "admin",
+        "write": "owner"
+      },
+      {
+        "path": "fbuy",
+        "read": "admin",
+        "write": "owner"
+      },
+      {
+        "path": "pstats",
+        "read": "owner",
+        "write": "owner"
+      },
+      {
+        "path": "ptasks",
+        "read": "owner",
+        "write": "owner"
+      },
+      {
+        "path": "precords",
+        "read": "owner",
+        "write": "owner"
+      },
+      {
+        "path": "pauto",
+        "read": "owner",
+        "write": "owner"
+      },
+      {
+        "path": "msgs",
+        "read": "owner",
+        "write": "owner"
+      },
+      {
+        "path": "msgs/{self}",
+        "read": "interact",
+        "write": "interact"
+      }
+    ]
+  },
+  "sample": {},
+  "room": {},
+  "user": {
+    "scopes": [
+      "profile"
+    ]
+  },
+  "mcp": {
+    "servers": [
+      {
+        "server": "Google Calendar",
+        "tools": [
+          "list_events"
+        ]
+      },
+      {
+        "server": "Gmail",
+        "tools": [
+          "search_threads"
+        ]
+      },
+      {
+        "server": "Google Drive",
+        "tools": [
+          "search_files"
+        ]
+      }
+    ]
+  }
+}
